@@ -3,7 +3,7 @@ FROM maven:3.6.2-jdk-8
 
 RUN apt-get update \
   #    && apt-get upgrade -y \
-  && apt-get install -y build-essential
+  && apt-get install -y build-essential graphviz
 
 #Build LoLA 2
 RUN mkdir /opt/lola \
